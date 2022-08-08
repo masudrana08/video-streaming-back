@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [mysrc, setMysrc] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8000/videos")
+    fetch("http://localhost:8000/stream/videos")
       .then((res) => res.json())
       .then((res) => {
         setMysrc(res);
@@ -16,7 +16,7 @@ function App() {
     const file = document.getElementById("inputFile");
     const formData = new FormData();
     formData.append("myfile", file.files[0]);
-    fetch("http://localhost:8000/upload", {
+    fetch("http://localhost:8000/stream/upload", {
       method: "POST",
       body: formData,
     })
@@ -32,7 +32,7 @@ function App() {
               <video id="videoPlayer" width="50%" controls muted="muted" autoPlay={false}>
               <source
                 id="x"
-                src={'http://localhost:8000/video?name='+`${item.uniqueid}`}
+                src={'http://localhost:8000/stream/video?name='+`${item.uniqueid}`}
                 type="video/mp4"
               />
             </video>
