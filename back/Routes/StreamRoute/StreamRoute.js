@@ -2,8 +2,7 @@ const express = require('express')
 const fs = require("fs");
 const path = require('path')
 const uuid = require('uuid');
-const { FileModel } = require('../../Models/FileModel');
-
+const FileModel  = require('../../Models/FileModel');
 const router = express.Router()
 
 router.post('/upload', (req, res)=>{
@@ -19,7 +18,10 @@ router.post('/upload', (req, res)=>{
             })
             fileModel.save()
             .then(dbres=>{
-                res.send(dbres)
+                res.send(JSON.stringify({
+                    status:'ok',
+                    data : dbres
+                }))
             })
         }
     })
