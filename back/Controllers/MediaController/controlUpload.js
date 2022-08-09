@@ -5,6 +5,7 @@ const MediaModel = require("../../Models/MediaModel");
 
 const controlUpload = (req, res)=>{
   const {title, category, tags} = req.body
+  const mytitle = title.toLowerCase().split(' ')
   const videoFile = req.files.video
   const thumbnailFile = req.files.thumbnail
   const videoId = `${uuid.v4()}${videoFile.name}`
@@ -22,9 +23,9 @@ const controlUpload = (req, res)=>{
                       videoName: videoFile.name,
                       videoId,
                       thumbnailId,
-                      title,
+                      title: mytitle,
                       category,
-                      tags: tags.split(',').slice(0,5),
+                      tags: tags.split(',').map(i=>i.trim().toLowerCase()).slice(0,5),
                       uploader: req.user.id
                   })
                   mediaModel.save()

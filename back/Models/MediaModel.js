@@ -11,7 +11,7 @@ const mediaSchema = new mongoose.Schema(
       required: true
     },
     title: {
-      type: String,
+      type: Array,
       required: true,
     },
     category: {
