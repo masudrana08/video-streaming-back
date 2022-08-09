@@ -9,8 +9,6 @@ const AuthRoute = require('./Routes/AuthRoute/AuthRoute');
 const UserRoute = require('./Routes/UserRoute/UserRoute');
 const whoIs = require('./Middleware/whois');
 const PORT = process.env.PORT || 8000
-
-
 app.use(cors())
 app.use(fileupload())
 app.use(express.json())
