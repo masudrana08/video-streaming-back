@@ -3,7 +3,7 @@ const path = require('path')
 
 const controlVideoStream = function(req, res){
   const range = req.headers.range
-  const videoPath = path.join(process.cwd(),'storage', req.query.name)
+  const videoPath = path.join(process.cwd(),'storage','video', req.query.name)
   const videoSize = fs.statSync(videoPath).size
   const chunkSize = 10**6
   const start = Number(range.replace(/\D/g, ''))

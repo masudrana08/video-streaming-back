@@ -19,19 +19,19 @@ const mediaSchema = new mongoose.Schema(
       required: true,
     },
 		uploader: {
-			type: String, // username
-			required: true
+			type: mongoose.Schema.Types.ObjectId, // user database id
+			required: true,
+      ref: 'User'
 		},
     view: Number,
     like: Array,
     unlike: Array,
     popularity: Number,
-    tags: Array,
-    subscribers: Array, // username[]
+    tags: Array
   },
   { timestamps: true }
 );
 
-const MediaModel = new mongoose.model("File", mediaSchema);
+const MediaModel = new mongoose.model("Media", mediaSchema);
 
 module.exports = MediaModel;

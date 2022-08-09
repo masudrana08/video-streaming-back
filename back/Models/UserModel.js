@@ -18,6 +18,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    subcribers: Array,
     subscribed: Array, // username[]
     watchLater: Array // videoId[]
 })

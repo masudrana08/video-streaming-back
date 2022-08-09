@@ -14,7 +14,7 @@ const controlSignin = (req, res)=>{
       const isAuthenticated = bcrypt.compareSync(password, user.passwordHash)
       if(isAuthenticated){
           const KEY = process.env.JWT_PRIVATE
-          const token = jwt.sign({name:user.name, email:user.email}, KEY)
+          const token = jwt.sign({name:user.name, email:user.email, username:user.username, id:user._id}, KEY)
           res.send(JSON.stringify({
               status:'ok',
               data: token
