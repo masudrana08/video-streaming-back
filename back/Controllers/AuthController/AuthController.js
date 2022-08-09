@@ -1,9 +1,14 @@
+const UserModel = require("../../Models/UserModel")
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+
 const signupController = (req, res)=>{
-    const {name, email, password} = req.body
+    const {name, username, email, password} = req.body
     const salt = bcrypt.genSaltSync(10)
     const passwordHash = bcrypt.hashSync(password, salt)
     const User = new UserModel({
         name, 
+        username,
         email,
         passwordHash
     })
@@ -21,8 +26,14 @@ const signupController = (req, res)=>{
 }
 
 const signinController = (req, res)=>{
-    const {email, password} = req.body
-    UserModel.findOne({email})
+    const {email, username, password} = req.body
+    const myQuery = {}
+    if(email) {
+        myQuery.email = email
+    } else if(username){
+        myQuery.username = username
+    }
+    UserModel.findOne(myQuery)
     .then(user=>{
         const isAuthenticated = bcrypt.compareSync(password, user.passwordHash)
         if(isAuthenticated){

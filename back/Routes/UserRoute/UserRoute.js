@@ -1,9 +1,5 @@
 const express = require('express')
-const fs = require("fs");
-const path = require('path')
-const uuid = require('uuid');
-const { uploadController, videoController, videosController } = require('../../Controllers/UserController');
-const FileModel  = require('../../Models/FileModel');
+const { uploadController, videoController, videosController } = require('../../Controllers/UserController/UserController');
 const router = express.Router()
 
 router.post('/upload', uploadController)

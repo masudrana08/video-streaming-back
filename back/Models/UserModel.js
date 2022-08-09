@@ -4,6 +4,11 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    username: {
+        type: String,
+        required: true,
+        unique: true
+    },
     email: {
         type: String,
         required: true,
@@ -12,7 +17,9 @@ const UserSchema = new mongoose.Schema({
     passwordHash: {
         type: String,
         required: true
-    }
+    },
+    subscribed: Array, // username[]
+    watchLater: Array // videoId[]
 })
 
 const UserModel = new mongoose.model('User', UserSchema )
