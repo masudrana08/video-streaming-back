@@ -1,5 +1,7 @@
 const express = require('express')
-const { controlUpload, controlVideoStream, controlRelevanceVideo } = require('../../Controllers/MediaController/MediaController');
+const controlRelevanceVideo = require('../../Controllers/MediaController/controlRelevanceVideo')
+const controlUpload = require('../../Controllers/MediaController/controlUpload')
+const controlVideoStream = require('../../Controllers/MediaController/controlVideoStream')
 const router = express.Router()
 
 router.post('/upload',  controlUpload)
