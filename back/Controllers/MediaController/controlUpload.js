@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path')
 const uuid = require('uuid');
-const VideoModel = require("../../Models/VideoModel");
+const MediaModel = require("../../Models/MediaModel");
 
 const controlUpload = (req, res)=>{
   const {title, category, tags} = req.body
@@ -19,7 +19,7 @@ const controlUpload = (req, res)=>{
       if(!err){
           thumbnailStream.write(thumbnailFile.data, (thumbErr)=>{
               if(!thumbErr){
-                  const videoModel = new VideoModel({
+                  const MediaModel = new MediaModel({
                       videoName: videoFile.name,
                       videoId,
                       thumbnailId,
@@ -28,7 +28,7 @@ const controlUpload = (req, res)=>{
                       tags,
                       uploader: username
                   })
-                  videoModel.save()
+                  MediaModel.save()
                   .then(dbres=>{
                       res.send(JSON.stringify({
                           status:'ok',

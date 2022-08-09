@@ -6,13 +6,8 @@ const whoIs = (req,res, next)=>{
   if(token){
       const decoded = jwt.verify(token, process.env.JWT_PRIVATE)
       req.user = decoded
-      next()
-  }else{
-    res.send(JSON.stringify({
-      status:'error',
-      data: 'Authorization Error'
-    }))
   }
+  next()
 }
 
 module.exports = whoIs

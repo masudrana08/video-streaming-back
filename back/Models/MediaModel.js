@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const videoSchema = new mongoose.Schema(
+const mediaSchema = new mongoose.Schema(
   {
     videoName: String,
     videoId: {
@@ -23,8 +23,8 @@ const videoSchema = new mongoose.Schema(
 			required: true
 		},
     view: Number,
-    like: Number,
-    unlike: Number,
+    like: Array,
+    unlike: Array,
     popularity: Number,
     tags: Array,
     subscribers: Array, // username[]
@@ -32,6 +32,6 @@ const videoSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const VideoModel = new mongoose.model("File", videoSchema);
+const MediaModel = new mongoose.model("File", mediaSchema);
 
-module.exports = VideoModel;
+module.exports = MediaModel;

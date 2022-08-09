@@ -1,3 +1,6 @@
 back/node_modules
 front/node_modules
-back/storage/*
+back/storage/video/*
+!back/storage/video/Readme
+back/storage/thumbnail/*
+!back/storage/thumbnail/Readme

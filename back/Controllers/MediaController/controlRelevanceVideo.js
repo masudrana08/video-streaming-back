@@ -1,7 +1,7 @@
-const VideoModel = require("../../Models/VideoModel");
+const MediaModel = require("../../Models/MediaModel");
 
 const controlRelevanceVideo =  (req, res)=>{
-  VideoModel.find()
+  MediaModel.find()
   .then(data=>{
       res.send(data)
       console.log(data);
