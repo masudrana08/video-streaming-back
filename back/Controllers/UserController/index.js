@@ -1,11 +1,4 @@
-const express = require('express')
-const fs = require("fs");
-const path = require('path')
-const uuid = require('uuid');
-const FileModel  = require('../../Models/FileModel');
-const router = express.Router()
-
-router.post('/upload', (req, res)=>{
+const uploadController = (req, res)=>{
     const file = req.files.myfile
     const fileUniqueId = `${uuid.v4()}${file.name}`
     const mypath = path.join(process.cwd(), 'storage', fileUniqueId)
@@ -24,21 +17,18 @@ router.post('/upload', (req, res)=>{
                 }))
             })
         }
-    })
+    })  
+}
 
-    
-})
-
-router.get('/videos', (req, res)=>{
+const videosController = (req, res)=>{
     FileModel.find()
     .then(data=>{
         res.send(data)
         console.log(data);
     })
-})
+}
 
-router.get('/video', function(req, res){
-    
+const videoController = function(req, res){
     const range = req.headers.range
     const videoPath = path.join(process.cwd(),'storage', req.query.name)
     const videoSize = fs.statSync(videoPath).size
@@ -55,6 +45,10 @@ router.get('/video', function(req, res){
     res.writeHead(206, headers)
      const videoStream = fs.createReadStream(videoPath, {start, end})
      videoStream.pipe(res)
-})
+}
 
-module.exports = router
+module.exports = {
+    uploadController,
+    videosController,
+    videoController
+}
