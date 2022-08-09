@@ -22,9 +22,10 @@ const controlReaction = (req, res) =>{
       }
       res.send(JSON.stringify({status:'ok'}))
     })
-  }else{
-    res.status(401).send(JSON.stringify({status:'Unauthorized'}))
+    .catch(err=>{
+      res.status(500).send(JSON.stringify({status:'Something Wrong'}))
+    })
+    }
   }
 
-}
 module.exports = controlReaction
