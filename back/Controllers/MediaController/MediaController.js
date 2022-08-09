@@ -3,7 +3,7 @@ const path = require('path')
 const uuid = require('uuid');
 const VideoModel = require("../../Models/VideoModel");
 
-const uploadController = (req, res)=>{
+const controlUpload = (req, res)=>{
     const {title, category, tags} = req.body
     const {username} = req.user
     const videoFile = req.files.video
@@ -41,15 +41,9 @@ const uploadController = (req, res)=>{
     })  
 }
 
-const videosController = (req, res)=>{
-    VideoModel.find()
-    .then(data=>{
-        res.send(data)
-        console.log(data);
-    })
-}
 
-const videoController = function(req, res){
+
+const controlVideoStream = function(req, res){
     const range = req.headers.range
     const videoPath = path.join(process.cwd(),'storage', req.query.name)
     const videoSize = fs.statSync(videoPath).size
@@ -68,8 +62,16 @@ const videoController = function(req, res){
      videoStream.pipe(res)
 }
 
+const controlRelevanceVideo =  (req, res)=>{
+    VideoModel.find()
+    .then(data=>{
+        res.send(data)
+        console.log(data);
+    })
+  }
+
 module.exports = {
-    uploadController,
-    videosController,
-    videoController
+    controlUpload,
+    controlVideoStream,
+    controlRelevanceVideo
 }

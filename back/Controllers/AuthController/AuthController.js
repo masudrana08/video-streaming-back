@@ -2,7 +2,7 @@ const UserModel = require("../../Models/UserModel")
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const signupController = (req, res)=>{
+const controlSignup = (req, res)=>{
     const {name, username, email, password} = req.body
     const salt = bcrypt.genSaltSync(10)
     const passwordHash = bcrypt.hashSync(password, salt)
@@ -25,7 +25,7 @@ const signupController = (req, res)=>{
     })
 }
 
-const signinController = (req, res)=>{
+const controlSignin = (req, res)=>{
     const {email, username, password} = req.body
     const myQuery = {}
     if(email) {
@@ -55,6 +55,6 @@ const signinController = (req, res)=>{
 }
 
 module.exports = {
-    signupController,
-    signinController
+    controlSignup,
+    controlSignin
 }

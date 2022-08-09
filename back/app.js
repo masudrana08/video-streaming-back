@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors')
 const fileupload = require('express-fileupload')
 const mongoose = require('mongoose')
-const UserRoute = require('./Routes/UserRoute/UserRoute')
+const MediaRoute = require('./Routes/MediaRoute/MediaRoute')
 const AuthRoute = require('./Routes/AuthRoute/AuthRoute')
 const PORT = process.env.PORT || 8000
 const jwt = require('jsonwebtoken')
@@ -22,7 +22,7 @@ app.use((req,res, next)=>{
     }
 })
 app.use('/auth', AuthRoute)
-app.use('/user', UserRoute)
+app.use('/media', MediaRoute)
 
 app.listen(PORT, function () {
     console.log("Listening on port "+PORT);
