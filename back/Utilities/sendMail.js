@@ -15,7 +15,7 @@ function sendMail() {
   from : process.env.MAIL_USER,
   to: 'masud@bursement.com',
   subject: 'NOTHING',
-  text: 'OOPS '
+  text: 'OOP '
   
  }
 
