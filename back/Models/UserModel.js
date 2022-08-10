@@ -22,6 +22,7 @@ const UserSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
+    tempPinHash: String,
     searches:Array,
     subscribers: Array,
     subscribed: Array, // username[]

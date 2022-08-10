@@ -2,27 +2,35 @@ const nodemailer = require('nodemailer');
 require('dotenv').config()
 
 
-function sendMail() {
-
- const transport = nodemailer.createTransport({
-  service: 'hotmail',
-  auth: {
-    user: process.env.MAIL_USER,
-    pass: process.env.MAIL_PASS
-  }
- })
- const options = {
-  from : process.env.MAIL_USER,
-  to: 'masud@bursement.com',
-  subject: 'NOTHING',
-  text: 'OOP '
+function sendMail(props) {
+return new Promise((resolve, reject)=>{
+  const transport = nodemailer.createTransport({
+    service: 'hotmail',
+    auth: {
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASS
+    }
+   })
+   const options = {
+    from : process.env.MAIL_USER,
+    to: props.to,
+    subject: props.subject,
+   }
+   if(props.text){
+    options.text = props.text
+   }
+   if(props.html){
+    options.html = props.html
+   }
   
- }
-
- transport.sendMail(options, (err, info)=>{
-  console.log(err);
- })
-
+   transport.sendMail(options, (err, info)=>{
+    if(!err){
+      resolve('mail send')
+    }else{
+      reject('Something Wrong')
+    }
+   })
+})
 }
 
 

@@ -13,11 +13,7 @@ const controlSignup = (req, res)=>{
   })
   User.save()
   .then(user=>{
-      const myres = {
-          status:'ok',
-          data : user
-      }
-      res.send(JSON.stringify(myres))
+      res.send(JSON.stringify({status:'ok'}))
   })
   .catch(err=>{
       res.send(JSON.stringify({status:'error'}))
