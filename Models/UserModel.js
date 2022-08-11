@@ -26,7 +26,10 @@ const UserSchema = new mongoose.Schema({
     searches:Array,
     subscribers: Array,
     subscribed: Array, // username[]
-    watchLater: Array // videoId[]
+    watchLater: {
+        type: [mongoose.Schema.Types.ObjectId],
+        ref: 'Media'
+    } 
 })
 
 const UserModel = new mongoose.model('User', UserSchema )
