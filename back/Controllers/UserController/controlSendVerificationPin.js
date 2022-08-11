@@ -13,6 +13,7 @@ const controlSendVerificationPin = (req, res) => {
     to: email,
     subject:'Check Your Verification Code',
     text : 'Your verification code is: '+verificationNumber,
+    html : `<html>Your verification code is: <b>${verificationNumber}</b></html>`
   })
   .then(result=>{
     UserModel.findOne({username: req.user.username})
