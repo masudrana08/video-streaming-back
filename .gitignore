@@ -1,7 +1,6 @@
-back/node_modules
-front/node_modules
-back/storage/video/*
-!back/storage/video/Readme
-back/storage/thumbnail/*
-!back/storage/thumbnail/Readme
-back/.env
+node_modules
+storage/video/*
+storage/thumbnail/*
+!storage/video/Readme
+!storage/thumbnail/Readme
+.env
