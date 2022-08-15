@@ -13,11 +13,14 @@ const controlSignup = (req, res)=>{
   })
   User.save()
   .then(user=>{
-      res.send(JSON.stringify({status:'ok'}))
+      res.status(200).json({status:'ok'})
   })
   .catch(err=>{
-      res.send(JSON.stringify({status:'error'}))
+      res.status(400).json({
+        message: err.message
+      })
   })
+  
 }
 
 module.exports = controlSignup

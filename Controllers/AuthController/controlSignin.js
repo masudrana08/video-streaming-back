@@ -21,13 +21,15 @@ const controlSignin = (req, res)=>{
               data: token
           }))
       }else{
-          res.send(JSON.stringify({
-              status:'Auth Failed'
-          }))
+          res.status(401).json({
+            message:'Auth Failed'
+        })
       }
   })
   .catch(err=>{
-      res.send(JSON.stringify({status:'error'}))
+    res.status(401).json({
+        message: err.message
+    })
   })
 }
 

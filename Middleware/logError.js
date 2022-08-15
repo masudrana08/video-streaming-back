@@ -6,7 +6,7 @@ function logError(err, req, res, next){
   if(err){
     const text = `👉 ${new Date().toLocaleDateString()}T${new Date().toLocaleTimeString()} => m:${err.message} \n s:${err.stack} \n`
     fs.appendFile(errorPath, text, cb=>{
-      res.sendStatus(500)
+      res.status(400).json(err.message)
     })
   }else{
     next()

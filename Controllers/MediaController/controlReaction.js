@@ -20,10 +20,12 @@ const controlReaction = (req, res) =>{
         dbres.like = dbres.like.filter(i=>i != req.user.name)
         dbres.save()
       }
-      res.send(JSON.stringify({status:'ok'}))
+      res.status(200)
     })
     .catch(err=>{
-      res.status(500).send(JSON.stringify({status:'Something Wrong'}))
+      res.status(400).json({
+        message: err.message
+      })
     })
     }
   }

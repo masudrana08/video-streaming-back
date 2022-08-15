@@ -1,0 +1,120 @@
+👉 8/15/2022T10:43:40 AM => m:password is not defined 
+ s:ReferenceError: password is not defined
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:8:40)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:47:12) 
+👉 8/15/2022T10:44:05 AM => m:password is not defined 
+ s:ReferenceError: password is not defined
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:8:40)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:47:12) 
+👉 8/15/2022T10:44:48 AM => m:password is not defined 
+ s:ReferenceError: password is not defined
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:8:40)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:47:12) 
+👉 8/15/2022T10:44:57 AM => m:password is not defined 
+ s:ReferenceError: password is not defined
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:8:40)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:47:12) 
+👉 8/15/2022T10:45:21 AM => m:password is not defined 
+ s:ReferenceError: password is not defined
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:8:40)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:47:12) 
+👉 8/15/2022T10:47:26 AM => m:Illegal arguments: object, string 
+ s:Error: Illegal arguments: object, string
+    at Object.bcrypt.hashSync (C:\Projects\Learning Project\Streaming\node_modules\bcryptjs\dist\bcrypt.js:189:19)
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:9:31)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3) 
+👉 8/15/2022T10:49:52 AM => m:Illegal arguments: undefined, string 
+ s:Error: Illegal arguments: undefined, string
+    at Object.bcrypt.hashSync (C:\Projects\Learning Project\Streaming\node_modules\bcryptjs\dist\bcrypt.js:189:19)
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:9:31)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3) 
+👉 8/15/2022T10:50:01 AM => m:Illegal arguments: undefined, string 
+ s:Error: Illegal arguments: undefined, string
+    at Object.bcrypt.hashSync (C:\Projects\Learning Project\Streaming\node_modules\bcryptjs\dist\bcrypt.js:189:19)
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:9:31)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3) 
+👉 8/15/2022T10:11:33 PM => m:Illegal arguments: undefined, string 
+ s:Error: Illegal arguments: undefined, string
+    at Object.bcrypt.hashSync (C:\Projects\Learning Project\Streaming\node_modules\bcryptjs\dist\bcrypt.js:189:19)
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:8:31)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3) 
+👉 8/15/2022T10:12:56 PM => m:Illegal arguments: undefined, string 
+ s:Error: Illegal arguments: undefined, string
+    at Object.bcrypt.hashSync (C:\Projects\Learning Project\Streaming\node_modules\bcryptjs\dist\bcrypt.js:189:19)
+    at controlSignup (C:\Projects\Learning Project\Streaming\Controllers\AuthController\controlSignup.js:8:31)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Projects\Learning Project\Streaming\node_modules\express\lib\router\index.js:175:3) 
